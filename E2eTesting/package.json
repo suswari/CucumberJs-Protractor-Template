@@ -1,0 +1,52 @@
+{
+  "name": "E2eTesting",
+  "version": "2.0.0",
+  "license": "MIT",
+  "description": "To demostrate protractor cucumber tests for angular/non angular apps with allure report framework",
+  "homepage": "https://github.com/igniteram/protractor-cucumber-typescript",
+  "keywords": [
+    "protractor",
+    "cucumber",
+    "typescript",
+    "angular",
+    "angularjs",
+    "testing",
+    "behaviour driven development",
+    "bdd",
+    "selenium",
+    "webdriverJS",
+    "gherkin",
+    "automation testing"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "protractor typeScript/config/config.js",
+    "debug": "node --inspect --debug-brk typeScript/config/config.js",
+    "webdriver-update": "webdriver-manager update --standalone --versions.standalone 3.3.1",
+    "webdriver-start": "webdriver-manager start --versions.standalone=3.3.1",
+    "webdriver-shutdown": "webdriver-manager shutdown"
+  },
+  "devDependencies": {
+    "@types/cucumber": "0.0.38",
+    "@types/node": "^8.5.9",
+    "@types/selenium-webdriver": "3.0.1",
+    "chai-as-promised": "^7.0.0",
+    "cucumber": "^2.3.0",
+    "mkdirp": "^0.5.1",
+    "protractor-cucumber-framework": "^3.1.1"
+  },
+  "dependencies": {
+    "chai": "^2.1.2",
+    "chromedriver": "^2.35.0",
+    "cucumber-html-reporter": "^2.0.0",
+    "mysql": "^2.15.0",
+    "protractor": "^5.2.2",
+    "protractor-cucumber": "^0.1.8",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "ts-node": "^3.1.0",
+    "typescript": "^2.6.2",
+    "webdriver-manager": "^12.0.6"
+  }
+}
